@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="bdlocadora.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1879"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="2" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="CLIENTES" custom_title="0" dock_id="1" table="4,8:mainCLIENTES"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000012400ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">
+/*Comando pra inserir dados*/
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Ação');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Romance');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Aventura');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Ficção');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Drama');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Terror');
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES ('Desenho');
+
+INSERT INTO CATEGORIAS (NOME_CATEGORIA) VALUES
+ ('Policial'),
+ ('Comédia'); 
+ 
+/*Comando para consultar dados */
+SELECT * FROM CATEGORIAS;
+SELECT * FROM FILMES;
+
+ /*Inserindo os dados dos Fiilmes*/
+INSERT INTO FILMES (FILME, COD_CATEGORIA, DIRETOR, VALOR_LOCACAO) 
+VALUES ('300', 1, 'Richard Donner', 3.5);
+		
+INSERT INTO FILMES (FILME, COD_CATEGORIA, DIRETOR, VALOR_LOCACAO) 
+VALUES ('Máquina Mortífera', 1, 'Richard Donner', 3.6),
+        ('A Mexicana', 2, 'Burr Steers', 2),
+		('A Verdade Nua e Crua', 2, 'Robert Luketic', 4),
+		('A Vida é Bela', 2, 'Rodrigo Benigni', 4),
+		('Austrália', 3, 'Baz Luhrmann', 4),
+		('Ultimato Bourn',3,'Paul Greengrass',	3.5),
+        ('Constantine',	4, 'Francis Lawrence',	2.5),
+		('Os Irmãos Grimm', 4, 'Terry Gilliam', 3.5),
+		('Os Doze Macacos',	4, 'Terry Gilliam',	2.5),
+	    ('Amadeus',	5, 'Milos Forman', 10),
+		('As Torres Gêmeas', 5,'Oliver Stone', 2.5),
+		('Platoon', 1, 'Oliver Stone', 5.5),
+		('O Advogado do Diabo',	6,'Taylor Hackford', 1.5),
+		('Beowulf',	7, 'Robert Zemeckis', 1),
+		('Bolt o super cão', 7, 'Byron Howard', 1.5),
+		('Apertem o cinto o piloto sumiu',	9 , 'Jim Abrahams',	3.6),
+		('Doze é demais', 9, 'Shawn Levy', 9.2),
+		('Uma noite no museu', 9, 'Shawn Levy',	2.5);</sql><sql name="SQL 2*"></sql><current_tab id="0"/></tab_sql></sqlb_project>
